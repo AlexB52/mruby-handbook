@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+gcc -Wall -I ../mruby/include $1.c -L ../mruby/build/host/lib -lm -lmruby -o $1
