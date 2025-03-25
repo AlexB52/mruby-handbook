@@ -1,6 +1,6 @@
-#include "mruby/value.h"
 #include <mruby.h>
 #include <mruby/compile.h>
+#include <mruby/value.h>
 
 int main(void) {
   mrb_state *mrb = mrb_open();
@@ -11,7 +11,7 @@ int main(void) {
   mrb_value x1 = mrb_float_value(mrb, 3.4);
   mrb_float f1 = mrb_float(x1);
 
-  printf("i1: %d, f1: %f\n", i1, f1);
+  printf("i1: %lld, f1: %f\n", i1, f1);
 
   mrb_close(mrb);
   return 0;
