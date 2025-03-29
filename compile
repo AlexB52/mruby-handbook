@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 
+# compiles
 gcc -Wall -I ../mruby/include $1.c -L ../mruby/build/host/lib -lm -lmruby -o $1
+
+# runs the compiled code
+./$1
